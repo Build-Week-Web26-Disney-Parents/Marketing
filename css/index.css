@@ -1,0 +1,27 @@
+nav {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+}
+nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+}
+nav a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+body {
+  background-color: #2f4f4f;
+  background-image: linear-gradient(to right, rgba(169, 169, 169, 0.7), #2f4f4f);
+  margin: 2% 8%;
+}
+.title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.title h1 {
+  font-size: 6rem;
+  font-family: 'Indie Flower', cursive;
+}
