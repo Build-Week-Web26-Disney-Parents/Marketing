@@ -1,13 +1,34 @@
-nav{
+header {
     display: flex;
-    justify-content: center;
     justify-content: space-between;
-    a{
-        font-size: 2rem;
-        text-decoration: none;
-        color: black;
-        &:hover{
-            color: rgba(0, 0, 0, 0.6);
+    margin: 2% 8% 2% 9%;
+    @media @phone{
+        margin: 2% 18% 2% 4%; 
+    }
+    h1{
+        color: #453DB0;
+        font-size: 2.4rem;
+        @media @phone{
+            color: white;
+            position: relative;
+            top: 200px;
         }
     }
-}
+    nav{
+        display: flex;
+        width: 60%;
+        justify-content: space-between;
+        align-items: center;
+        a{
+            font-size: 2.1rem;
+            text-decoration: none;
+            color: #453DB0;
+            &:hover{
+                color: rgba(0, 0, 0, 0.6);
+            }
+        }
+        @media @phone{
+            display: none;
+        }
+    }//nav
+}//header
