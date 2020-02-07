@@ -1,15 +1,151 @@
 
 body {
-    background-color:   rgb(47,79,79);
-    background-image: linear-gradient(to right, rgba(169, 169, 169, 0.7) , rgb(47,79,79));
-    margin: 2% 8%;
-}
-.title{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h1{
-        font-size: 6rem;
-        font-family: 'Indie Flower', cursive;
+    .marketing_P{
+        font-size: 1.6rem;
+        line-height: 36px;
+        @media @phone {
+            display: none;
+        }
     }
-}
+    .about_P{
+        font-size: 1.6rem;
+        line-height: 36px;
+        color: black;
+        @media @phone{
+            color: white;
+        }
+    }
+    .Section{
+        background-color: #453DB0;
+        color: white;
+        padding: 3% 18% 4% 9%;
+        @media @phone{
+            padding: 3% 0% 4% 4%;
+        }
+        .slogan_Marketing{
+            font-size: 3.3rem;
+            padding-right: 15%;
+            @media @phone{
+                font-size: 2rem;
+                position: relative;
+                top: 150px;
+                padding-right: 5%;
+                color: white;
+            }
+        }
+    
+        button{
+            border-radius: 3px;
+            border: 1px solid #453DB0;
+            margin-top: 2%;
+            height: 64px;
+            width: 284px;
+            color: mediumslateblue;
+            font-size: 2rem;
+            font-family: 'Lato', sans-serif;
+            font-weight: 500;
+            @media @phone{
+                position: relative;
+                top: 150px;
+                width: 85%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            &:active {
+                background-color: rgb(189, 189, 189);
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+
+            }
+        }
+    }//section
+    .Section_about{
+        .Section{
+            background-color: white;
+            color:  #453DB0;
+            @media @phone{
+                background-color: #453DB0;
+                color: white;
+            }
+            button{
+                display: none;
+            }
+            .slogan_About{
+                font-size: 3.3rem;
+                padding-right: 15%;
+                @media @phone{
+                    font-size: 2rem;
+                    position: relative;
+                    bottom: 0px;
+                    padding-right: 5%;
+                    color: white;
+                    font-weight: 500;
+                }
+            } 
+        }//section
+
+    }//section about
+    .Section2{
+        display: flex;
+        justify-content: space-between;
+        .secureFeature{
+            padding: 3% 5% 4% 9%;
+            width: 50%;
+            h2{
+                font-size: 3.3rem;
+                color: #453DB0;
+                
+            }
+        }
+        img{
+            width: 35%;
+            height: 35%;
+            margin: 5% 10% 0% 0%;
+            @media @phone{
+                display: none;
+            }
+        }
+        
+    }//section2
+   .bottom_Section{
+       display: flex;
+       justify-content: space-between;
+       padding: 0% 14% 4% 9%;
+       @media @phone{
+           flex-direction: column;
+           padding: 0% 5% 4% 5%;
+       }
+       .Section2_about{
+           width: 28%;
+           @media @phone{
+               width: 100%;
+               padding-bottom: 12%;
+           }
+
+            img{
+                width: 100%;
+                border: 2px solid rebeccapurple;
+            }
+            .about_Paragraph{
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                h2{
+                    font-size: 2.7rem;
+                    color: #453DB0;
+                    @media @phone{
+                        color: white;
+                        font-size: 3.4rem;
+                    }
+                }
+            }
+       }
+   }//.bottom_section
+   @media @phone{
+       background-color:  #453DB0;
+   }
+   
+
+   
+}//body
+

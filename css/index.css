@@ -1,27 +1,224 @@
-nav {
+header {
   display: flex;
-  justify-content: center;
   justify-content: space-between;
+  margin: 2% 8% 2% 9%;
 }
-nav a {
-  font-size: 2rem;
-  text-decoration: none;
-  color: black;
+@media (max-width: 800px) {
+  header {
+    margin: 2% 2% 2% 4%;
+  }
 }
-nav a:hover {
-  color: rgba(0, 0, 0, 0.6);
+header .marketing_Disney {
+  color: #453DB0;
+  font-size: 2.4rem;
 }
-body {
-  background-color: #2f4f4f;
-  background-image: linear-gradient(to right, rgba(169, 169, 169, 0.7), #2f4f4f);
-  margin: 2% 8%;
+@media (max-width: 800px) {
+  header .marketing_Disney {
+    color: white;
+    position: relative;
+    top: 200px;
+  }
 }
-.title {
+header .about_Disney {
+  color: #453DB0;
+  font-size: 2.4rem;
+}
+@media (max-width: 800px) {
+  header .about_Disney {
+    color: white;
+    position: relative;
+    top: 20px;
+  }
+}
+header nav {
   display: flex;
-  justify-content: center;
+  width: 60%;
+  justify-content: space-between;
   align-items: center;
 }
-.title h1 {
-  font-size: 6rem;
-  font-family: 'Indie Flower', cursive;
+header nav a {
+  font-size: 2.1rem;
+  text-decoration: none;
+  color: #453DB0;
+}
+@media (max-width: 800px) {
+  header nav a {
+    color: white;
+    font-size: 1.8rem;
+    position: relative;
+    bottom: 30px;
+  }
+}
+header nav a:hover {
+  color: rgba(0, 0, 0, 0.6);
+}
+@media (max-width: 800px) {
+  header nav {
+    width: 40%;
+  }
+}
+@media (max-width: 800px) {
+  header nav .nav_Signs {
+    display: none;
+  }
+}
+body .marketing_P {
+  font-size: 1.6rem;
+  line-height: 36px;
+}
+@media (max-width: 800px) {
+  body .marketing_P {
+    display: none;
+  }
+}
+body .about_P {
+  font-size: 1.6rem;
+  line-height: 36px;
+  color: black;
+}
+@media (max-width: 800px) {
+  body .about_P {
+    color: white;
+  }
+}
+body .Section {
+  background-color: #453DB0;
+  color: white;
+  padding: 3% 18% 4% 9%;
+}
+@media (max-width: 800px) {
+  body .Section {
+    padding: 3% 0% 4% 4%;
+  }
+}
+body .Section .slogan_Marketing {
+  font-size: 3.3rem;
+  padding-right: 15%;
+}
+@media (max-width: 800px) {
+  body .Section .slogan_Marketing {
+    font-size: 2rem;
+    position: relative;
+    top: 150px;
+    padding-right: 5%;
+    color: white;
+  }
+}
+body .Section button {
+  border-radius: 3px;
+  border: 1px solid #453DB0;
+  margin-top: 2%;
+  height: 64px;
+  width: 284px;
+  color: mediumslateblue;
+  font-size: 2rem;
+  font-family: 'Lato', sans-serif;
+  font-weight: 500;
+}
+@media (max-width: 800px) {
+  body .Section button {
+    position: relative;
+    top: 150px;
+    width: 85%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+body .Section button:active {
+  background-color: #bdbdbd;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+body .Section_about .Section {
+  background-color: white;
+  color: #453DB0;
+}
+@media (max-width: 800px) {
+  body .Section_about .Section {
+    background-color: #453DB0;
+    color: white;
+  }
+}
+body .Section_about .Section button {
+  display: none;
+}
+body .Section_about .Section .slogan_About {
+  font-size: 3.3rem;
+  padding-right: 15%;
+}
+@media (max-width: 800px) {
+  body .Section_about .Section .slogan_About {
+    font-size: 2rem;
+    position: relative;
+    bottom: 0px;
+    padding-right: 5%;
+    color: white;
+    font-weight: 500;
+  }
+}
+body .Section2 {
+  display: flex;
+  justify-content: space-between;
+}
+body .Section2 .secureFeature {
+  padding: 3% 5% 4% 9%;
+  width: 50%;
+}
+body .Section2 .secureFeature h2 {
+  font-size: 3.3rem;
+  color: #453DB0;
+}
+body .Section2 img {
+  width: 35%;
+  height: 35%;
+  margin: 5% 10% 0% 0%;
+}
+@media (max-width: 800px) {
+  body .Section2 img {
+    display: none;
+  }
+}
+body .bottom_Section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0% 14% 4% 9%;
+}
+@media (max-width: 800px) {
+  body .bottom_Section {
+    flex-direction: column;
+    padding: 0% 5% 4% 5%;
+  }
+}
+body .bottom_Section .Section2_about {
+  width: 28%;
+}
+@media (max-width: 800px) {
+  body .bottom_Section .Section2_about {
+    width: 100%;
+    padding-bottom: 12%;
+  }
+}
+body .bottom_Section .Section2_about img {
+  width: 100%;
+  border: 2px solid rebeccapurple;
+}
+body .bottom_Section .Section2_about .about_Paragraph {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+body .bottom_Section .Section2_about .about_Paragraph h2 {
+  font-size: 2.7rem;
+  color: #453DB0;
+}
+@media (max-width: 800px) {
+  body .bottom_Section .Section2_about .about_Paragraph h2 {
+    color: white;
+    font-size: 3.4rem;
+  }
+}
+@media (max-width: 800px) {
+  body {
+    background-color: #453DB0;
+  }
 }
