@@ -3,15 +3,24 @@ header {
     justify-content: space-between;
     margin: 2% 8% 2% 9%;
     @media @phone{
-        margin: 2% 18% 2% 4%; 
+        margin: 2% 2% 2% 4%; 
     }
-    h1{
+    .marketing_Disney{
         color: #453DB0;
         font-size: 2.4rem;
         @media @phone{
             color: white;
             position: relative;
             top: 200px;
+        }
+    }
+    .about_Disney{
+        color: #453DB0;
+        font-size: 2.4rem;
+        @media @phone{
+            color: white;
+            position: relative;
+            top: 20px;
         }
     }
     nav{
@@ -23,12 +32,23 @@ header {
             font-size: 2.1rem;
             text-decoration: none;
             color: #453DB0;
+            @media @phone{
+                color: white;
+                font-size: 1.8rem;
+                position: relative;
+                bottom: 30px;
+            }
             &:hover{
                 color: rgba(0, 0, 0, 0.6);
             }
         }
         @media @phone{
-            display: none;
+            width: 40%;
+        }
+        .nav_Signs{
+            @media @phone{
+                display: none;
+            }
         }
     }//nav
 }//header
